@@ -1,0 +1,38 @@
+
+.kaufman {
+   position: relative;
+   padding: 90px 0;
+   text-align: center;
+   z-index: 0;
+   overflow: hidden;
+}
+
+.title_theme-dark {
+    margin-top: 0;
+}
+
+.subtitle_theme-dark {
+    margin-bottom: 80px;
+}
+
+.table_theme-dark {
+    margin-bottom: 90px;
+}
+
+.cell_theme-dark {
+    width: 200px;
+}
+
+.cell_theme-dark:nth-child(1n+6) {
+    margin-top: 80px;
+}
+.cell_theme-dark:nth-child(5) {
+    margin-top: 0%;
+}
+
+.kaufman__triangle {
+position: absolute;
+top: 0;
+right: -210px;
+z-index: -1;
+}
