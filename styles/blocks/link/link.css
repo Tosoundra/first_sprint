@@ -1,0 +1,19 @@
+.link {
+    color: #2f80ed;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+  }
+  
+  .link:hover {
+    opacity: 0.7;
+    transform: scale(0.9);
+  }
+  
+  .link:visited {
+    color: #2f80ed;
+  }
+
+ /* .link:active {
+    transform: scale(0.9);
+  }
+  */

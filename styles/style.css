@@ -1,160 +1,48 @@
-@import url(../styles/discprition__section.css);
-@import url(../styles/Feyman__section.css);
-@import url(../styles/digits.css);
-@import url(../styles/Kaufman_section.css);
-/*Подключение стилей для остальных блоков */
+/* Vendor */
+@import url(../styles/vendor/normalize.css);
 
-* {
-  margin: 0;
-}
+/* Main */
+@import url(../styles/blocks/page/page.css);
+@import url(../styles/blocks/header/header.css);
+@import url(../styles/blocks/description/description.css);
+@import url(../styles/blocks/techniques/techniques.css);
+@import url(../styles/blocks/video/video.css);
+@import url(../styles/blocks/oakley/oakley.css);
+@import url(../styles/blocks/feynman/feyman.css);
+@import url(../styles/blocks/digits/digits.css);
+@import url(../styles/blocks/khan/khan.css);
+@import url(../styles/blocks/resources/resources.css);
+@import url(../styles/blocks/kaufman/Kaufman.css);
+@import url(../styles/blocks/footer/footer.css);
 
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
+/* section-title / subtitle */
+@import url(../styles/blocks/section-title/section-title.css);
+@import url(../styles/blocks/section-subtitle/section-subtitle.css);
 
-.link {
-  text-decoration: none;
-}
+/* section-title / subtitle _theme_dark */
+@import url(../styles/blocks/section-title/_theme/section-title_theme_dark.css);
+@import url(..//styles/blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 
-.link:visited {
-  color: #2f80ed;
-}
+/* table */
+@import url(../styles/blocks/table/table.css);
+@import url(..//styles/blocks/table/__heading/table__heading.css);
+@import url(..//styles/blocks/table/__cell/table__cell.css);
+@import url(../styles/blocks/table/__text/table__text.css);
+ 
+/* Utility */
+@import url(../logo/logo.css);
+@import url(../styles/blocks/link/link.css);
+@import url(../styles/blocks/rotation/rotation.css);
+@import url(../styles/blocks/scale/scale.css);
 
-.header {
-  position: relative;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  display: flex;
-  margin-bottom: 100px;
-  background-color: #f2f2f2;
-  /* выше установили ограничения для секции */
+/* theme_dark */
+@import url(..//styles/blocks/theme/theme_dark.css);
+@import url(../styles/blocks/table/_theme/table_theme_dark.css);
+@import url(..//styles/blocks/table/__cell/_theme/table__cell_theme_dark.css);
 
-}
-
-.logo_place_header {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-}
-
-.header__title {
-  display: inline-block;
-  width: 730px;
-  height: 200px;
-  margin: auto 64px;
-  line-height: 96px;
-  font-size: 102px;
-  font-weight: 600;
-  z-index: 3;
-}
-
-.header__subtitle {
-  position: absolute;
-  bottom: 30px;
-  left: 64px;
-  width: 388px;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: normal;
-  z-index: 2;
-  margin: 0;
-}
-
-.header__main-illustration {
-  width: 765px;
-  height: 608px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  position: absolute;
-  top: 64px;
-  right: 0;
-  z-index: 0;
-}
-
-.theme-dark {
-  background-color: black;
-  color: white;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
-.footer {
-  min-height: 350px;
-  padding: 60px 0 40px;
-}
-
-.footer__columns {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer__columns_content-copyright {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-basis: 711px;
-}
-
-.logo_place-footer {
-  width: 228px;
-  height: 32px;
-}
-
-.footer__author {
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 18px;
-}
-
-.footer__column-heading {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.footer__column {
-  text-align: left;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.footer__column-link {
-  text-decoration: none;
-  color: white;
-}
-
-.footer__column-link:visited {
-  color: white;
-}
-
-.footer__social-icon {
-  margin-right: 10px;
-}
+/*  two-columns */
+@import url(../styles/blocks/two-columns/two-columns.css);
+@import url(../styles/blocks/two-columns/__brief/two-columns__brief.css);
+@import url(..//styles/blocks/two-columns/__main-text/two-columns__main-text.css);
+@import url(../styles/blocks/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../styles//blocks/two-columns/__span-accent/two-columns__span-accent.css);
